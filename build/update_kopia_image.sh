@@ -33,4 +33,4 @@ docker build \
     --build-arg "kopiaRepoOrg=${KOPIA_REPO_ORG}" \
     --file ./docker/kopia-build/Dockerfile .
 
-docker push ${GH_PACKAGE_TARGET}:$TAG
+# docker push ${GH_PACKAGE_TARGET}:$TAG
