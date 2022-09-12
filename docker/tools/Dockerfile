@@ -10,7 +10,7 @@ LABEL name="kanister-tools" \
 
 COPY --from=restic/restic:0.11.0 /usr/bin/restic /usr/local/bin/restic
 # ghcr.io/kanisterio/kopia:alpine-317cc36
-COPY --from=ghcr.io/kanisterio/kopia@sha256:87648ef24ce47f1d74ef5fa70bff96080f686b849dd0d787e1699d4c05807c4b \
+COPY --from=docker.io/ankitjain235/kopia@sha256: \
   /kopia/kopia /usr/local/bin/kopia
 COPY LICENSE /licenses/LICENSE
 
